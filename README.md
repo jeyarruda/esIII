@@ -1,2 +1,2 @@
 # Engenharia de Software III
-Alguns exercÃ­cios deenvolvidos para a grade dessa matÃ©ria da Faculdade de Tecnologia Prof. Jessen Vidal 
+Alguns exercí­cios deenvolvidos para a grade dessa matéria da Faculdade de Tecnologia Prof. Jessen Vidal

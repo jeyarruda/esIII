@@ -1,2 +1,4 @@
-# Class files
+.classpath
+.project
+.settings/
 *.class

@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import br.com.pageseguro.remessas.Remessa;
 
-public abstract class PagamentoFebraban {
+public abstract class RemessaFebraban {
 	protected Remessa remessa;
 	
 	protected final HashMap<String, String> meses = new HashMap<String, String>() {
@@ -40,7 +40,7 @@ public abstract class PagamentoFebraban {
 		}
 	};
 	
-	public PagamentoFebraban(Remessa remessa) {
+	public RemessaFebraban(Remessa remessa) {
 		this.remessa = remessa;
 	}
 	

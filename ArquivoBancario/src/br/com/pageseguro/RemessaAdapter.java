@@ -2,9 +2,9 @@ package br.com.pageseguro;
 
 import br.com.pageseguro.remessas.Remessa;
 
-public class PagamentoAdapter extends PagamentoFebraban {
+public class RemessaAdapter extends RemessaFebraban {
 	
-	public PagamentoAdapter(Remessa r) {
+	public RemessaAdapter(Remessa r) {
 		super(r);
 	}
 

@@ -17,8 +17,8 @@ public class Run {
 		Scanner sc = new Scanner(System.in);
 		List<Remessa> remessas = new ArrayList<Remessa>();
 		
-		PagamentoJSON remessaJson = new PagamentoJSON();
-		PagamentoXML remessaXml = new PagamentoXML();
+		RemessaJSON remessaJson = new RemessaJSON();
+		RemessaXML remessaXml = new RemessaXML();
 		
 		int op;
 		do {

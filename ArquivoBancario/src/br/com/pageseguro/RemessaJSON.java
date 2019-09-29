@@ -16,7 +16,7 @@ import br.com.pageseguro.remessas.RemessaBoleto;
 import br.com.pageseguro.remessas.RemessaCartaoCredito;
 import br.com.pageseguro.remessas.RemessaCartaoDebito;
 
-public class PagamentoJSON implements PagamentoArquivo {
+public class RemessaJSON implements RemessaArquivo {
 	private List<Remessa> remessas = new ArrayList<Remessa>();
 	
 	@Override
@@ -109,7 +109,7 @@ public class PagamentoJSON implements PagamentoArquivo {
 	}
 	
 	private Remessa adaptarRemessa(Remessa r) {
-		PagamentoAdapter padpt = new PagamentoAdapter(r);
+		RemessaAdapter padpt = new RemessaAdapter(r);
 		r.setData(padpt.getDataFebrabanJSON());
 		return r;
 	}

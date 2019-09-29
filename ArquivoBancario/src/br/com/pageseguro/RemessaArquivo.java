@@ -4,6 +4,6 @@ import java.util.List;
 
 import br.com.pageseguro.remessas.Remessa;
 
-public interface PagamentoArquivo {
+public interface RemessaArquivo {
 	public List<Remessa> lerRemessas(String src);
 }

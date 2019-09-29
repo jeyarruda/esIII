@@ -12,7 +12,7 @@ import br.com.pageseguro.remessas.RemessaBoleto;
 import br.com.pageseguro.remessas.RemessaCartaoCredito;
 import br.com.pageseguro.remessas.RemessaCartaoDebito;
 
-public class PagamentoXML implements PagamentoArquivo {
+public class RemessaXML implements RemessaArquivo {
 	List<Remessa> remessas;
 	
 	@Override
@@ -43,7 +43,7 @@ public class PagamentoXML implements PagamentoArquivo {
 	}
 
 	private Remessa adaptarRemessa(Remessa r) {
-		PagamentoAdapter padpt = new PagamentoAdapter(r);
+		RemessaAdapter padpt = new RemessaAdapter(r);
 		r.setData(padpt.getDataFebrabanXML());
 		return r;
 	}

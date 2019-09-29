@@ -1,9 +1,11 @@
-package br.com.febraban;
+package br.com.pageseguro;
 
 import java.util.HashMap;
 
+import br.com.pageseguro.remessas.Remessa;
+
 public abstract class PagamentoFebraban {
-	protected Pagamento pagamento;
+	protected Remessa remessa;
 	
 	protected final HashMap<String, String> meses = new HashMap<String, String>() {
 		{
@@ -22,7 +24,7 @@ public abstract class PagamentoFebraban {
 		}
 	};
 	
-	protected final HashMap<String, String> horas = new HashMap<String, String>() {
+	protected final HashMap<String, String> horasPM = new HashMap<String, String>() {
 		{
 			put("1", "13");
 			put("2", "14");
@@ -38,13 +40,15 @@ public abstract class PagamentoFebraban {
 		}
 	};
 	
-	public PagamentoFebraban(Pagamento pagamento) {
-		this.pagamento = pagamento;
+	public PagamentoFebraban(Remessa remessa) {
+		this.remessa = remessa;
 	}
 	
-	public abstract String getDataFebraban();
+	public abstract String getDataFebrabanJSON();
 	
-	public Pagamento getPagamento() {
-		return pagamento;
+	public abstract String getDataFebrabanXML();
+	
+	public Remessa getPagamento() {
+		return remessa;
 	}
 }

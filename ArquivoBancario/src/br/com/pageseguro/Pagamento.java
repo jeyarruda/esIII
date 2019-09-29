@@ -1,4 +1,4 @@
-package br.com.febraban;
+package br.com.pageseguro;
 
 public class Pagamento {
 	protected String id;
@@ -6,8 +6,8 @@ public class Pagamento {
 	protected double valor;
 	protected String bancoPagamento;
 	protected String bancoRecebimento;
-	protected String cpfTitular;
-	protected String nomeTitular;
+	protected String CPF;
+	protected String nome;
 	protected int parcelas;
 	
 	public String getId() {
@@ -59,18 +59,18 @@ public class Pagamento {
 	}
 	
 	public String getCpfTitular() {
-		return cpfTitular;
+		return CPF;
 	}
 	
 	public void setCpfTitular(String cpfTitular) {
-		this.cpfTitular = cpfTitular;
+		this.CPF = cpfTitular;
 	}
 	
 	public String getNomeTitular() {
-		return nomeTitular;
+		return nome;
 	}
 	
 	public void setNomeTitular(String nomeTitular) {
-		this.nomeTitular = nomeTitular;
+		this.nome = nomeTitular;
 	}
 }
